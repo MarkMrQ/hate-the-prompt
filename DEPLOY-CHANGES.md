@@ -1,8 +1,7 @@
-# Don't Hate the Player — Lily Ray slide, source QRs, copy + audio fixes
+# Don't Hate the Player — Lily Ray slide, copy + audio fixes (QR parked)
 
-## Two zips
-**1. `hate-the-prompt-FULL.zip` — to TEST.** Complete self-contained site. Unzip, double-click `index.html`, works offline: 43 slides, Lily Ray at 27, QR codes on the 8 source slides, audio, nav. Verify here before deploying.
-**2. `hate-the-prompt-update.zip` — to DEPLOY.** Just the changed files for a clean commit: `index.html` + `assets/lilyray-27.png` + `slides/slide-07.png` + `slides/slide-14.png` + `slides/slide-25.png`.
+## To deploy
+`hate-the-prompt-update.zip` — the changed files for a clean commit: `index.html` + `assets/lilyray-27.png` + `slides/slide-07.png` + `slides/slide-14.png` + `slides/slide-25.png`.
 
 ## Deploy
 ```bash
@@ -15,7 +14,8 @@ git pull --rebase origin main && git push
 
 ## What changed
 - **New slide 27 — Lily Ray** ("69%" empirical proof). Deck is now 43; no existing PNG renamed or re-exported.
-- **Source QR codes — 8 slides** (6, 7, 17, 21, 24, 26, 27, 42; none on 35 — Floate webinar is password-protected). Now **always on, no toggle** (removed the SOURCES button — it looked bad on mobile). The QR lives **completely outside the slide artwork**: the slide now scales to leave a thin black "telemetry band" at the bottom of the screen on every display, and the QR sits in that band in the bottom-right corner, next to the SOUND ON button. It never overlaps slide content. Appears ~0.2s after a source slide loads.
+- **Design reverted to full-bleed** — the slide fills the screen on desktop and mobile (no shrinking, no bottom band). Verified by simulating both viewports against a real slide.
+- **Source QR codes — PARKED.** They no longer display anywhere (they were forcing layout compromises). The QR data is still in the file (`SRCQR{}`), so we can resurface it later as a single consolidated "sources" slide at the end without re-deriving anything. The 8 source mappings: slides 6, 7, 17, 21, 24, 26, 27, 42 (none on 35 — Floate webinar is password-protected).
 - **Audio gate fix** — audio no longer plays until you click the warning screen. Previously the intro track could start under the gate; now nothing plays before "INITIATE BRIEF" is clicked.
 - **Copy fixes (re-rendered slides):**
   - **Slide 7** — "EGR ask Mark to write it up" → **"EGR asked me to write it up"** (first person).
