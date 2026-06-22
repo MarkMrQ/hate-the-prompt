@@ -1,31 +1,34 @@
-# Lily Ray slide + source QR codes — what happened & how to ship
-
-## Why it looked broken
-- The **live site was never updated** — it's still the old 42-slide version, so there was no QR and no Lily Ray. Nothing was wrong with your machine.
-- The earlier zip was a **drop-in for the repo** (just `index.html` + the new asset) — it doesn't contain the slide PNGs, so opening it on its own makes every slide image 404 → blank ("slide 5 broke"). That's expected for a drop-in; it only works once dropped into the repo that already has the slides.
-- The QR codes were built **opt-in (press S)**, so they were invisible by default. **Fixed:** QRs now appear automatically (fade in ~1.6s) on the 8 source slides; press **S** (or the ◆ SOURCES button) only if you want to *hide* them.
+# Don't Hate the Player — Lily Ray slide, source QRs, copy + audio fixes
 
 ## Two zips
-**1. `hate-the-prompt-FULL.zip` — to TEST.** A complete, self-contained site. Unzip, double-click `index.html`, and everything works offline: 43 slides, Lily Ray at 27, QR codes visible on the 8 source slides, audio, nav. Use this to verify before you deploy.
-**2. `hate-the-prompt-update.zip` — to DEPLOY.** The changed files (`index.html` + `assets/lilyray-27.png` + `slides/slide-25.png`) for a clean commit.
+**1. `hate-the-prompt-FULL.zip` — to TEST.** Complete self-contained site. Unzip, double-click `index.html`, works offline: 43 slides, Lily Ray at 27, QR codes on the 8 source slides, audio, nav. Verify here before deploying.
+**2. `hate-the-prompt-update.zip` — to DEPLOY.** Just the changed files for a clean commit: `index.html` + `assets/lilyray-27.png` + `slides/slide-07.png` + `slides/slide-14.png` + `slides/slide-25.png`.
 
 ## Deploy
 ```bash
 cd ~/Downloads/hate-the-prompt
-# copy in index.html (overwrite) + assets/lilyray-27.png (new) + slides/slide-25.png (overwrite), then:
-git add index.html assets/lilyray-27.png slides/slide-25.png
-git commit -m "Add Lily Ray slide (27) + auto source QR + hash deep-linking + slide 25 copy fix"
+# copy in the changed files from the update zip (overwrite index.html + the 3 slides, add lilyray-27.png), then:
+git add index.html assets/lilyray-27.png slides/slide-07.png slides/slide-14.png slides/slide-25.png
+git commit -m "Lily Ray slide 27 + auto source QR + deep-linking + audio gate fix + copy fixes (slides 7,14,25)"
 git pull --rebase origin main && git push
 ```
-> **slide-25.png** is the OUT-SEO slide with the new sub-line *"Not a ranking problem. Not a hack you can buy."* (was "…rap I can rhyme with"). If your live slides are Zlatko's hand-designed versions, this one is my T2 render — give Zlatko the new line for exact parity, or deploy mine.
 
-## ⚠ Important — which slides are live?
-The FULL test zip contains **my rendered slide PNGs** so you can test offline. If your live `/slides/` are **Zlatko's hand-designed versions** (different from mine), do **NOT** deploy the `slides/` folder from the full zip — deploy **only `index.html` + `assets/lilyray-27.png`** (the update zip). That preserves Zlatko's locked slides; the viewer just plays the new Lily Ray asset in sequence.
-- If your live slides are actually my renders, you can deploy the whole FULL folder — same result.
-- Either way, the new **Lily Ray slide is my T2 render**; swap in a Zlatko version later by replacing `assets/lilyray-27.png` (no other change needed).
+## What changed
+- **New slide 27 — Lily Ray** ("69%" empirical proof). Deck is now 43; no existing PNG renamed or re-exported.
+- **Source QR codes — 8 slides** (6, 7, 17, 21, 24, 26, 27, 42; none on 35 — Floate webinar is password-protected). Now **always on, no toggle** (removed the SOURCES button — it looked bad on mobile). Small 84px badge **fixed in the bottom-right corner, directly above the SOUND ON button**; appears ~0.2s after a source slide loads.
+- **Audio gate fix** — audio no longer plays until you click the warning screen. Previously the intro track could start under the gate; now nothing plays before "INITIATE BRIEF" is clicked.
+- **Copy fixes (re-rendered slides):**
+  - **Slide 7** — "EGR ask Mark to write it up" → **"EGR asked me to write it up"** (first person).
+  - **Slide 14** — "Founder of Growth?" → **"Founder or Growth?"**
+  - **Slide 25** — "Not a rap I can rhyme with" → **"Not a hack you can buy."**
+- **Hash deep-linking** — `/#27` jumps straight to slide 27; URL updates as you navigate (skips the warning gate when deep-linked).
 
-## What's in the change (all additive — atmospherics, audio chain, gate, JUDGEMENT DAY, rotate-prompt untouched)
-- New slide 27 (Lily Ray) → deck is 43; existing PNGs not renamed/re-exported.
-- 8 source QRs (on by default, appear ~0.2s after the slide loads; press **S** or the ◆ SOURCES button to hide). Small 84px badge pinned to the **slide's bottom-right corner** — positioned inside the stage so it scales with the slide and lands in the same spot on every screen. Position was pixel-checked against all 8 source slides to clear the attribution lines, stat/quote boxes and footer. Slides: 6, 7, 17, 21, 24, 26, 27, 42. None on 35 (Floate webinar, password-protected).
-- Hash deep-linking: `/#27` jumps straight to slide 27; URL updates as you navigate.
-- Cosmetic note: Zlatko's baked "REC NN/42" counters are now off-by-one after slide 26 (the live bottom counter reads correctly as NN/43). Zlatko can re-export if it bugs you.
+All additive otherwise — atmospherics, JUDGEMENT DAY end-card, rotate-phone prompt untouched.
+
+## ⚠ Which slides are live?
+The FULL zip contains **my rendered slide PNGs**. If your live `/slides/` are **Zlatko's hand-designed versions**, deploy **only the changed files listed above** (the update zip) — that preserves Zlatko's other slides; the viewer just plays the new/edited assets in sequence. **slides 7, 14, 25** in the update zip are *my* T2 renders of those three — if your live versions are Zlatko's, give him the new wording for exact parity, or deploy mine. The **Lily Ray slide** is also my T2 render; swap in a Zlatko version later by replacing `assets/lilyray-27.png`.
+
+Cosmetic: Zlatko's baked "REC NN/42" counters read off-by-one after slide 26 (the live bottom counter is correct at NN/43). Zlatko can re-export if it bugs you.
+
+## One thing left for you to decide
+Slide 6's quote attribution still reads *"— Mark Hald, ranting on LinkedIn about Google."* That's a byline/signature rather than third-person narration, so I left it — but if you want it gone too, say so and I'll change it.

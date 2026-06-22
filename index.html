@@ -72,15 +72,12 @@ html,body{height:100%;background:#02040a;overflow:hidden;font-family:"Share Tech
 @keyframes flash{0%{background:#fff}5%{background:#fff}9%{background:#1a0a0a}100%{background:#000}}
 @keyframes glitch{0%{transform:translate(0,0)}25%{transform:translate(-3px,2px)}50%{transform:translate(3px,-2px)}
   75%{transform:translate(-2px,-1px)}100%{transform:translate(2px,1px)}}
-/* source QR badge — pinned to the SLIDE's bottom-right corner (inside #stage, so it scales WITH the slide and lands in the same verified empty spot on every screen) */
-#srcqr{position:absolute;right:62px;bottom:58px;z-index:32;display:none;background:#fff;border:2px solid #74d6ff;border-radius:5px;padding:5px;box-shadow:0 0 14px rgba(0,0,0,.55);}
+/* source QR badge — fixed in the bottom-right UI corner, directly ABOVE the SOUND ON button. Always on (no toggle). */
+#srcqr{position:fixed;right:16px;bottom:60px;z-index:33;display:none;background:#fff;border:2px solid #74d6ff;border-radius:5px;padding:5px;box-shadow:0 0 14px rgba(0,0,0,.6);}
 #srcqr.show{display:block;animation:fadein .35s ease;}
 @keyframes fadein{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 #srcqr img{width:84px;height:84px;display:block;}
-#srcbtn{position:fixed;right:146px;bottom:12px;z-index:31;background:transparent;border:1px solid #3c6f8c;color:#74d6ff;
-  font-family:inherit;font-size:12px;letter-spacing:2px;padding:6px 12px;border-radius:6px;cursor:pointer;}
-#srcbtn.on{border-color:#ff5a1f;color:#ff5a1f;}
-@media (max-width:900px){ #srcbtn{right:120px;font-size:11px;padding:6px 9px} #dots{display:none} }
+@media (max-width:900px){ #srcqr img{width:72px;height:72px} #srcqr{bottom:56px} #dots{display:none} }
 </style></head><body>
 <div id="vp"><div id="stage">
 <img class="sl" src="slides/slide-01.png" alt="slide 1">
@@ -132,9 +129,8 @@ html,body{height:100%;background:#02040a;overflow:hidden;font-family:"Share Tech
 <button class="zone" id="pz" aria-label="prev"></button>
 <button class="zone" id="nz" aria-label="next"></button>
 <div id="bar"><span id="ct"></span><div id="dots"></div></div>
-<button id="srcbtn">&#9670; SOURCES (S)</button>
 <button id="snd">◉ SOUND ON</button>
-<div id="hint">← → / SPACE · F = FULLSCREEN · S = SOURCES · INTRO 1-4 · OUTRO ON 43</div>
+<div id="hint">← → / SPACE · F = FULLSCREEN · INTRO 1-4 · OUTRO ON 43</div>
 <div id="start"><b>► INITIATE BRIEF</b><em class="warn">&#9888; AUDIO ENABLED — SOUND WILL PLAY · TURN VOLUME UP</em><span>CLICK OR PRESS ANY KEY TO BEGIN</span></div>
 <div id="boom"><b>JUDGEMENT DAY</b><span>TRANSMISSION TERMINATED · TAP TO REPLAY</span></div>
 <div id="rotate"><div class="ic">↻</div><b>TURN YOUR PHONE</b><span>This brief is built for landscape.</span></div>
@@ -163,21 +159,20 @@ function renderOv(n){
       d.innerHTML=o.text.replace(/&/g,'&amp;').replace(/</g,'&lt;')+' <i>.</i><i>.</i><i>.</i>';ovLayer.appendChild(d);}
   });
 }
-// source QR codes — ON by default; appears almost immediately on a source slide. Press S / button to hide.
-let sourcesOn=true,srcTimer=null;
-const srcqr=document.getElementById('srcqr'),srcbtn=document.getElementById('srcbtn');
+// source QR codes — always on; appear automatically on the 8 source slides. No toggle.
+let srcTimer=null;
+const srcqr=document.getElementById('srcqr');
 function renderSrc(){
   srcqr.classList.remove('show');
   if(srcTimer){clearTimeout(srcTimer);srcTimer=null;}
-  if(sourcesOn && SRCQR[i]!==undefined){
+  if(SRCQR[i]!==undefined){
     srcqr.querySelector('img').src=SRCQR[i];
     srcTimer=setTimeout(()=>srcqr.classList.add('show'),220);
   }
 }
-function toggleSrc(){ sourcesOn=!sourcesOn; srcbtn.classList.toggle('on',sourcesOn); renderSrc(); }
-srcbtn.onclick=toggleSrc; srcbtn.classList.toggle('on',sourcesOn);
 // Intro: slides 1-4 only (auto-starts, hard-stops at slide 5, never replays). Outro: last slide only, once.
 function audio(n){
+  if(!started){intro.pause();outro.pause();return;}   // never play before the warning gate is clicked
   if(!on){intro.pause();outro.pause();return;}
   if(n<=INTRO_END){                         // intro window (slides 1-4)
     outro.pause();
@@ -210,7 +205,7 @@ addEventListener('pointerdown',e=>{_px=e.clientX;},{passive:true});
 addEventListener('pointerup',e=>{
   if(!started){begin();return;}
   if(detonated){replay();return;}
-  if(e.target&&e.target.closest&&e.target.closest('#snd,#srcbtn,#dots,.d,#bar,#srcqr')) return; // leave controls/QR alone
+  if(e.target&&e.target.closest&&e.target.closest('#snd,#dots,.d,#bar,#srcqr')) return; // leave controls/QR alone
   const dx=e.clientX-(_px==null?e.clientX:_px);_px=null;
   if(Math.abs(dx)>45){dx<0?nx():pv();return;}        // horizontal swipe
   (e.clientX/innerWidth<0.22)?pv():nx();             // tap: left 22% = back, else next
@@ -220,7 +215,6 @@ addEventListener('keydown',e=>{if(!started){begin();e.preventDefault();return;}
   if(['ArrowRight','ArrowDown',' ','PageDown'].includes(k)){nx();e.preventDefault()}
   else if(['ArrowLeft','ArrowUp','PageUp'].includes(k)){pv();e.preventDefault()}
   else if(k==='Home')go(0);else if(k==='End')go(sl.length-1);
-  else if(k.toLowerCase()==='s'){toggleSrc();}
   else if(k.toLowerCase()==='f'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}});
 const sb=document.getElementById('snd');
 sb.onclick=()=>{on=!on;sb.textContent=on?'◉ SOUND ON':'◯ SOUND OFF';audio(i)};
