@@ -26,6 +26,6 @@ The FULL test zip contains **my rendered slide PNGs** so you can test offline. I
 
 ## What's in the change (all additive — atmospherics, audio chain, gate, JUDGEMENT DAY, rotate-prompt untouched)
 - New slide 27 (Lily Ray) → deck is 43; existing PNGs not renamed/re-exported.
-- 8 source QRs (auto-show, bottom-left HUD card, away from top-right metadata): slides 6, 7, 17, 21, 24, 26, 27, 42. None on 35 (Floate webinar, password-protected).
+- 8 source QRs (on by default, appear ~0.2s after the slide loads; press **S** or the ◆ SOURCES button to hide). Small 84px badge pinned to the **slide's bottom-right corner** — positioned inside the stage so it scales with the slide and lands in the same spot on every screen. Position was pixel-checked against all 8 source slides to clear the attribution lines, stat/quote boxes and footer. Slides: 6, 7, 17, 21, 24, 26, 27, 42. None on 35 (Floate webinar, password-protected).
 - Hash deep-linking: `/#27` jumps straight to slide 27; URL updates as you navigate.
 - Cosmetic note: Zlatko's baked "REC NN/42" counters are now off-by-one after slide 26 (the live bottom counter reads correctly as NN/43). Zlatko can re-export if it bugs you.
