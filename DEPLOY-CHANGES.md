@@ -15,7 +15,7 @@ git pull --rebase origin main && git push
 
 ## What changed
 - **New slide 27 — Lily Ray** ("69%" empirical proof). Deck is now 43; no existing PNG renamed or re-exported.
-- **Source QR codes — 8 slides** (6, 7, 17, 21, 24, 26, 27, 42; none on 35 — Floate webinar is password-protected). Now **always on, no toggle** (removed the SOURCES button — it looked bad on mobile). Small 84px badge **fixed in the bottom-right corner, directly above the SOUND ON button**; appears ~0.2s after a source slide loads.
+- **Source QR codes — 8 slides** (6, 7, 17, 21, 24, 26, 27, 42; none on 35 — Floate webinar is password-protected). Now **always on, no toggle** (removed the SOURCES button — it looked bad on mobile). The QR lives **completely outside the slide artwork**: the slide now scales to leave a thin black "telemetry band" at the bottom of the screen on every display, and the QR sits in that band in the bottom-right corner, next to the SOUND ON button. It never overlaps slide content. Appears ~0.2s after a source slide loads.
 - **Audio gate fix** — audio no longer plays until you click the warning screen. Previously the intro track could start under the gate; now nothing plays before "INITIATE BRIEF" is clicked.
 - **Copy fixes (re-rendered slides):**
   - **Slide 7** — "EGR ask Mark to write it up" → **"EGR asked me to write it up"** (first person).
