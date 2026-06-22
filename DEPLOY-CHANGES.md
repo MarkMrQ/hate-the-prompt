@@ -1,42 +1,31 @@
-# Deploy — Lily Ray slide + source QR codes
+# Lily Ray slide + source QR codes — what happened & how to ship
 
-Two files change in the `hate-the-prompt` repo. **No Zlatko slide PNGs are touched.**
+## Why it looked broken
+- The **live site was never updated** — it's still the old 42-slide version, so there was no QR and no Lily Ray. Nothing was wrong with your machine.
+- The earlier zip was a **drop-in for the repo** (just `index.html` + the new asset) — it doesn't contain the slide PNGs, so opening it on its own makes every slide image 404 → blank ("slide 5 broke"). That's expected for a drop-in; it only works once dropped into the repo that already has the slides.
+- The QR codes were built **opt-in (press S)**, so they were invisible by default. **Fixed:** QRs now appear automatically (fade in ~1.6s) on the 8 source slides; press **S** (or the ◆ SOURCES button) only if you want to *hide* them.
 
-## Files in `hate-the-prompt-update.zip`
-1. **`index.html`** → replaces the existing one (root of repo)
-2. **`assets/lilyray-27.png`** → NEW file, drop into `assets/`
+## Two zips
+**1. `hate-the-prompt-FULL.zip` — to TEST.** A complete, self-contained site. Unzip, double-click `index.html`, and everything works offline: 43 slides, Lily Ray at 27, QR codes visible on the 8 source slides, audio, nav. Use this to verify before you deploy.
+**2. `hate-the-prompt-update.zip` — to DEPLOY.** The changed files (`index.html` + `assets/lilyray-27.png` + `slides/slide-25.png`) for a clean commit.
 
-Everything else (slides, audio, the existing overlays) is untouched.
-
-## Commit
+## Deploy
 ```bash
-cd ~/Downloads/hate-the-prompt        # your local clone
-# copy the two files in from the unzipped update, then:
-git add index.html assets/lilyray-27.png
-git commit -m "Add Lily Ray slide (27) + opt-in source QR codes + hash deep-linking"
+cd ~/Downloads/hate-the-prompt
+# copy in index.html (overwrite) + assets/lilyray-27.png (new) + slides/slide-25.png (overwrite), then:
+git add index.html assets/lilyray-27.png slides/slide-25.png
+git commit -m "Add Lily Ray slide (27) + auto source QR + hash deep-linking + slide 25 copy fix"
 git pull --rebase origin main && git push
 ```
+> **slide-25.png** is the OUT-SEO slide with the new sub-line *"Not a ranking problem. Not a hack you can buy."* (was "…rap I can rhyme with"). If your live slides are Zlatko's hand-designed versions, this one is my T2 render — give Zlatko the new line for exact parity, or deploy mine.
 
-## What changed (all additive)
-- **New slide 27 — Lily Ray.** Inserted between Fable 5 (26) and ACT III (now 28) as `assets/lilyray-27.png`. Deck is now **43 slides**. The existing slide PNGs were NOT renamed or re-exported — the viewer just plays the new asset in sequence.
-- **Source QR codes — opt-in, press `S`.** A bottom-left HUD card with the QR + domain. Off by default (clean delivery); press **S** (or the **◆ SOURCES** button) to reveal the source for the current slide. On these slides only:
+## ⚠ Important — which slides are live?
+The FULL test zip contains **my rendered slide PNGs** so you can test offline. If your live `/slides/` are **Zlatko's hand-designed versions** (different from mine), do **NOT** deploy the `slides/` folder from the full zip — deploy **only `index.html` + `assets/lilyray-27.png`** (the update zip). That preserves Zlatko's locked slides; the viewer just plays the new Lily Ray asset in sequence.
+- If your live slides are actually my renders, you can deploy the whole FULL folder — same result.
+- Either way, the new **Lily Ray slide is my T2 render**; swap in a Zlatko version later by replacing `assets/lilyray-27.png` (no other change needed).
 
-  | Slide (of 43) | Source |
-  |---|---|
-  | 6 | Ryan Murton LinkedIn thread |
-  | 7 | EGR article |
-  | 17 | Search Engine Journal (Danny Sullivan) |
-  | 21 | Jon Clark / Profound Zero-Click |
-  | 24 | CL4R1T4S leaked prompts repo |
-  | 26 | CL4R1T4S (Fable 5) |
-  | 27 | Lily Ray substack |
-  | 42 | EGR article |
-
-  No QR on slide 35 (MACHINE TRUE / Floate webinar) — password-protected, deliberately omitted.
-- **Hash deep-linking.** `…/#27` jumps straight to slide 27 (skips the start gate). The URL updates as you navigate, so any slide is linkable/shareable.
-- **Untouched, as required:** the slide PNGs, the intro/outro audio chain (intro on 1–4, outro now on slide 43 — auto-derived), the click-to-begin gate, JUDGEMENT DAY end-card, rotate-phone prompt, and all T2 atmospherics (sweep, grain, REC dot, eye blinks, loader).
-
-## Notes / your call
-- **The Lily Ray slide is rendered in the deck's T2 style** (molten 69% hero, chrome/fire/yellow palette) as a faithful drop-in. If it sits next to Zlatko's hand-designed slides and you want pixel-exact parity, hand Zlatko the content and swap `assets/lilyray-27.png` for his version — nothing else needs to change.
-- **Baked counters:** Zlatko's slides have their "REC NN/42" baked in; with 43 slides the baked top-right numbers are now cosmetically off by one after slide 26. The live bottom counter is correct (NN / 43). If that bugs you, Zlatko can re-export with /43 — but it's cosmetic.
-- **QR scannability:** all 8 are generous on the LED wall. The Ryan Murton LinkedIn *comment* deep-link is a very long URL (dense QR) — fine on the wall, but phones may need to be close. Say the word and I'll point that one at a short link instead.
+## What's in the change (all additive — atmospherics, audio chain, gate, JUDGEMENT DAY, rotate-prompt untouched)
+- New slide 27 (Lily Ray) → deck is 43; existing PNGs not renamed/re-exported.
+- 8 source QRs (auto-show, bottom-left HUD card, away from top-right metadata): slides 6, 7, 17, 21, 24, 26, 27, 42. None on 35 (Floate webinar, password-protected).
+- Hash deep-linking: `/#27` jumps straight to slide 27; URL updates as you navigate.
+- Cosmetic note: Zlatko's baked "REC NN/42" counters are now off-by-one after slide 26 (the live bottom counter reads correctly as NN/43). Zlatko can re-export if it bugs you.
