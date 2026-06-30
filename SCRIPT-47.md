@@ -1,24 +1,19 @@
 # DON'T HATE THE PLAYER, HATE THE PROMPT
-### iGB L!VE 2026 · ~13-15 min · McMark, personal capacity · 47-slide cut
+### iGB L!VE 2026 · ~16-17 min spoken + outro film · McMark · 47-slide cut
 
-Matches the rebuilt deck and the laptop-2 notes in `presenter.html`. One card per slide, each complete with the jokes and facts.
+Matches the deck and the laptop-2 notes in presenter.html. One card per slide, 1:1. Two trims from the 20-min run: the slide-5 John Connor repeat (the film already says it) and the looping 'trust not ranking' restatement on slide 32.
 
-## The two-laptop setup
-- Laptop 1 -> index.html (deck, LED wall). Laptop 2 -> presenter.html (notes, facing you).
-- Same keys on both (arrows / Space / #n jump). Notes counter shows the real deck slide number, so they stay locked together.
-- Cold open (1-4) = the film, no notes. Start the notes when the title card (5) lands.
-- Presenter keys: T timer, B blackout, F fullscreen.
-
-## How to memorise it
-1. Learn the spine (the cue line per slide). 2. Chunk by act. 3. Three run-throughs out loud, recorded. 4. Rehearse the joins. 5. Full words live on laptop 2 if you blank.
+## Two-laptop setup
+- Laptop 1 -> index.html (deck). Laptop 2 -> presenter.html (notes). Same keys; notes counter = real slide number. Start BOTH at slide 1.
+- Cold open (1-4) = film, don't speak. Presenter keys: T timer, B blackout, F fullscreen.
 
 ---
 
-## THE SCRIPT (47-slide order · [beat] = pause · keep the jokes)
+## THE SCRIPT (47-slide order · [beat] = pause)
 
 **[1-4 · cold open]** Don't speak. Let the film play. Start when the title card lands.
 
-**[5 · Title card lands]** Right. That was a lot, wasn't it? Don't worry, I'm not going to talk to you like that for the next fifteen minutes. I'll let that one slip. I'm not John Connor. Connor fought Skynet. I just figured out how to get cited by it, which this year apparently counts as a superpower.
+**[5 · Title card lands]** Right. That was a lot, wasn't it? Don't worry, I'm not going to talk to you like that for the next fifteen minutes. I'll let that one slip.
 
 **[6 · The seed]** Quick backstory, so you know who to blame. I was ranting in the LinkedIn comments about how the Google algorithm has been fundamentally broken since the helpful content update in 2022, maybe a bit before. And I wrote one line: don't hate the players, hate the game.
 
@@ -30,11 +25,11 @@ Matches the rebuilt deck and the laptop-2 notes in `presenter.html`. One card pe
 
 **[10 · Hands up]** Quick survey. Hands up, actually put your hand up so I can count, if in the last six months or so you've been told you need to start ranking in ChatGPT. [beat] Yeah. As expected. That's a lot of hands. By the end of the next fifteen minutes I want every hand in this room back down, and hopefully staying down.
 
-**[11 · Who's selling it · the roll-call]** Put your hands down, because I want to show you some of the people doing the telling. These are real LinkedIn posts from the last twelve months. You've got Neil Patel. Stephen. Julian. Lenny. Hamna. All of them some version of how to rank number one in ChatGPT.
+**[11 · Who's selling it · posts wall (1 of 3)]** Put your hands down, because I want to show you the people doing the telling. These are real LinkedIn posts from the last twelve months. Neil Patel. Stephen. Julian. Lenny. Hamna. And my favourite, Connor, which is perfect for the Terminator 2 analogy I'm running today. So thank you for that, Connor. That's six of them. I stopped counting at a couple of hundred.
 
-**[12 · …and my favourite, Connor]** And my favourite, Connor. Which is perfect, because of the Terminator 2 analogy I'm running today. So thank you for that, Connor. [beat for the laugh]
+**[12 · Who's selling it · posts wall (2 of 3)]** These are all real LinkedIn posts from the last twelve months. Neil Patel. Stephen. Julian. Lenny. Hamna. And my favourite, Connor, which is perfect for the Terminator 2 analogy I'm running today. So thank you for that, Connor. That's six of them. I stopped counting at a couple of hundred.
 
-**[13 · …I stopped counting at a couple of hundred]** That's six of them. I stopped counting at a couple of hundred. So before you buy whatever any of them are selling, do one thing for me.
+**[13 · Who's selling it · posts wall (3 of 3) → mirror]** That's six of them. I stopped counting at a couple of hundred. So before you buy whatever any of them are selling, do one thing for me.
 
 **[14 · Mirror check (job titles)]** Take a look in the mirror. Then put your hand back up if the person who told you to rank in ChatGPT had some kind of fluffy job title. Head of. Director of. Founder OR Growth? [beat] I'm not sure what that last one does all day, but he's very confident. And he's got a course.
 
@@ -72,7 +67,7 @@ Matches the rebuilt deck and the laptop-2 notes in `presenter.html`. One card pe
 
 **[31 · The framework]** So if you cannot rank in ChatGPT, what can you do? Here's the part nobody is selling, because there's no acronym to wrap it in yet. And no acronym means no invoice. You become a source the model wants to trust.
 
-**[32 · Surface. Don't rank.]** Retrieval pulls a candidate pool, the system prompt filters it, and what survives is the small handful of sources the model has decided it trusts. That's a surfacing layer, a source-quality problem, not a position-on-the-page problem. Don't think like an SEO. You need to be a source the system prompt was not written to distrust. Not the one that wins the ranking, the one that wins the trust filter.
+**[32 · Surface. Don't rank.]** Retrieval pulls a candidate pool, the system prompt filters it, and what survives is the small handful it trusts. So it's a trust problem, not a ranking problem. You win the trust filter, not the position.
 
 **[33 · Ranking vs surfacing]** And I'll hold my hand up here, this is boring. There's no acronym, there's no thirty-day masterclass. It's a return to a set of disciplines the industry abandoned when programmatic SEO became cheaper than real journalists. Which is bad news for consultants, and good news for in-house teams.
 
@@ -106,20 +101,14 @@ Matches the rebuilt deck and the laptop-2 notes in `presenter.html`. One card pe
 
 ---
 
-## One-line cue sheet (print as index cards)
-1-4 cold open, DON'T SPEAK · 5 Right. That was a lot, wasn't it? · 6 Quick backstory, so you know who to blame · 7 EGR saw it and asked ME to write a piece · 8 Then someone read the piece and asked me to do it in real life · 9 Act I. The one lie everything else hangs on · 10 HANDS UP, actually put them up: who's been told in the last 6 months to 'rank in ChatGPT'? · 11 Hands down. Now look who's doing the telling · 12 And my favourite: Connor · 13 That's six of them · 14 …take a look in the mirror · 15 Saying this early so we know why we're here: ranking in ChatGPT is not a real thing · 16 Hello, I'm Mark. I run SEO and ASO at MrQ · 17 AI hit the mainstream, ChatGPT became a verb, marketeers panicked (I say that with affection, I'm one) · 18 So is any of it genuinely new? A sliver · 19 Fair point (one per talk): Cyrus Shepard, good SEO IS good GEO. Mostly · 20 The cure is for an illness we don't actually have. Quick interlude before the receipts · 21 'Is the earth flat?' → confident no, roughly a sphere. Consensus working. (ta, Mark Williams-Cook, for the analogy) · 22 How does it filter without a backlink audit? Consensus. Six trusted sources agreeing beat one over-optimised page · 23 Honest aside: not every model behaves the same · 24 Act II. Theory's over · 25 Ask 'best online casinos in the UK' (my day job) · 26 A few weeks ago the prompts for Claude Opus, GPT-5.5, Gemini leaked. I covered it in EGR, that's why I'm here · 27 Which query category did they have in mind? 'Best online casinos.' 'Best slots.' 'Best UK sportsbook.' · 28 It gets worse. Newest leak (Fable) files product recommendations alongside conspiracy theories, pseudoscience, contested political events · 29 'At least I get cited'? Lily Ray ran 100 'best' queries through AI Overviews · 30 My favourite receipt: Suganthan read two days of ChatGPT's raw traffic · 31 Act III. If you can't rank, what CAN you do? · 32 Retrieval pulls a pool, the system prompt filters it, what survives is the handful it trusts · 33 I'll hold my hand up: this is BORING · 34 Three pillars. I named it SEQ a year ago at MrQ, mainly as a joke · 35 STRUCTURE, the boring stuff: semantic HTML, front-loaded answers, atomic chunks, facts where the model can extract them · 36 EXPERTISE, the bit consultants don't sell, because there's no shortcut · 37 QUALITY: accept the model's been told not to trust your domain by default · 38 This is what Charles Floate calls 'machine true.' · 39 Punchline's on me: structure, expertise, quality, it's just SEO. The same SEO that worked in 2014 · 40 The whole secret, after the framework, the logo and the acronym: · 41 Land it in three sentences · 42 TWO: SEQ is just SEO, structure, expertise, quality, same pillars, different surfacing mechanism · 43 THREE: about to sign a six-figure deal for LMNOPEO? · 44 This was Don't Hate the Player. Hate the prompt · 45 I was Mark. The full talk's on EGR · 46 And don't take my word for any of it · 47 Outro film + audio plays: 'I am not John Connor… cited by it, and so can you.'
+## One-line cue sheet
+1-4 cold open, DON'T SPEAK · 1 The cold-open film is playing. DON'T SPEAK · 2 Still the film. Don't speak · 3 Still the film. Don't speak · 4 Last cold-open beat. Don't speak yet · 5 Right. That was a lot, wasn't it? · 6 Quick backstory, so you know who to blame · 7 EGR saw it and asked ME to write a piece · 8 Then someone read the piece and asked me to do it in real life · 9 Act I. The one lie everything else hangs on · 10 HANDS UP, actually put them up: who's been told in the last 6 months to 'rank in ChatGPT'? · 11 Hands down. Now look who's actually doing the telling · 12 Same beat, the wall keeps building · 13 Last of the wall. Land the count: · 14 …take a look in the mirror · 15 Saying this early so we know why we're here: ranking in ChatGPT is not a real thing · 16 Hello, I'm Mark. I run SEO and ASO at MrQ · 17 AI hit the mainstream, ChatGPT became a verb, marketeers panicked (I say that with affection, I'm one) · 18 So is any of it genuinely new? A sliver · 19 Fair point (one per talk): Cyrus Shepard, good SEO IS good GEO. Mostly · 20 The cure is for an illness we don't actually have. Quick interlude before the receipts · 21 'Is the earth flat?' → confident no, roughly a sphere. Consensus working. (ta, Mark Williams-Cook, for the analogy) · 22 How does it filter without a backlink audit? Consensus. Six trusted sources agreeing beat one over-optimised page · 23 Honest aside: not every model behaves the same · 24 Act II. Theory's over · 25 Ask 'best online casinos in the UK' (my day job) · 26 A few weeks ago the prompts for Claude Opus, GPT-5.5, Gemini leaked. I covered it in EGR, that's why I'm here · 27 Which query category did they have in mind? 'Best online casinos.' 'Best slots.' 'Best UK sportsbook.' · 28 It gets worse. Newest leak (Fable) files product recommendations alongside conspiracy theories, pseudoscience, contested political events · 29 'At least I get cited'? Lily Ray ran 100 'best' queries through AI Overviews · 30 My favourite receipt: Suganthan read two days of ChatGPT's raw traffic · 31 Act III. If you can't rank, what CAN you do? · 32 Retrieval pulls a pool, the prompt filters it, what survives is the few it trusts · 33 I'll hold my hand up: this is BORING · 34 Three pillars. I named it SEQ a year ago at MrQ, mainly as a joke · 35 STRUCTURE, the boring stuff: semantic HTML, front-loaded answers, atomic chunks, facts where the model can extract them · 36 EXPERTISE, the bit consultants don't sell, because there's no shortcut · 37 QUALITY: accept the model's been told not to trust your domain by default · 38 This is what Charles Floate calls 'machine true.' · 39 Punchline's on me: structure, expertise, quality, it's just SEO. The same SEO that worked in 2014 · 40 The whole secret, after the framework, the logo and the acronym: · 41 Land it in three sentences · 42 TWO: SEQ is just SEO, structure, expertise, quality, same pillars, different surfacing mechanism · 43 THREE: about to sign a six-figure deal for LMNOPEO? · 44 This was Don't Hate the Player. Hate the prompt · 45 I was Mark. The full talk's on EGR · 46 And don't take my word for any of it · 47 Outro film + audio plays: 'I am not John Connor… cited by it, and so can you.'
 
 ## Two banana skins
-- Stay first-person. "EGR asked **me**", never your own name out loud.
-- Land the titles. "Head of *(beat)* ... Director of *(beat)* ... Founder **OR** Growth?" The joke is **OR**.
+- Stay first-person. "EGR asked **me**", never your own name.
+- Land the titles: "Head of *(beat)* ... Director of *(beat)* ... Founder **OR** Growth?" The joke is **OR**.
 
-## Act-break one-liners (the pithy bits to break up the acts)
-- **9 (Act I):** "I'd apologise in advance, but I genuinely won't mean it."
-- **24 (Act II):** "This is the bit where I stop having opinions and start showing you screenshots."
-- **31 (Act III):** "There's no acronym for it yet, and no acronym means no invoice."
-- **40 (the work):** "Do the work. I'm aware that's an anticlimax. I'm living it."
+## Act-break one-liners
+- 9: "I'd apologise in advance, but I genuinely won't mean it." · 24: "I stop having opinions and start showing you screenshots." · 31: "no acronym means no invoice." · 40: "Do the work. I'm aware that's an anticlimax. I'm living it."
 
-## Credits to keep
-- Mark Williams-Cook (flat-earth analogy 21, "machine true" 38) · Charles Floate ("machine true" 38) · Dima (OREO 39) · Connor (Terminator gag 12).
-
-*Timing: ~13-15 min. If tight, cut the symptoms/flat-earth riff (20-21) and the 36/90 beat (23).*
+## Credits: Mark Williams-Cook (flat-earth 21, machine-true 38) · Charles Floate (machine-true 38) · Dima (OREO 39) · Connor (Terminator gag, slides 11-13).
