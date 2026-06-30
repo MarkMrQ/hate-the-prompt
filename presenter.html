@@ -45,8 +45,12 @@ html,body{height:100%;background:#070b11;color:#e7edf4;font-family:-apple-system
 <button class="zone" id="nz" aria-label="next"></button>
 <div id="black"></div>
 <script>
-// Starts at slide 5 (first slide you speak on). 1–4 = cold-open film, no notes. n = real deck slide number.
+// 1:1 with the deck: one card per slide so the numbers always match. 1–4 = cold open (don't speak). n = real deck slide number.
 const N=[
+{n:1,a:"Cold open · DON'T SPEAK",t:"The film is playing",c:["The cold-open film is playing. DON'T SPEAK.","Let the audio breathe.","(Cards 1–4 just keep you locked to the deck. You start on slide 5.)"],s:"[Cold open, slides 1 to 4. Do not talk. Let the dramatic narration play. You start speaking when the title card lands on slide 5.]"},
+{n:2,a:"Cold open · DON'T SPEAK",t:"The film is playing",c:["Still the film. Don't speak.","Wait for the title card (slide 5)."],s:"[Still the cold open. Don't talk over it.]"},
+{n:3,a:"Cold open · DON'T SPEAK",t:"The film is playing",c:["Still the film. Don't speak.","Wait for the title card (slide 5)."],s:"[Still the cold open. Don't talk over it.]"},
+{n:4,a:"Cold open · DON'T SPEAK",t:"Film hands over next",c:["Last cold-open beat. Don't speak yet.","Get ready: you speak on the NEXT slide (the title card)."],s:"[Cold open about to end. Get ready, you start on the next slide when the title card lands.]"},
 {n:5,a:"Open",t:"Title card lands",c:["Right. That was a lot, wasn't it?","Don't worry, I'm not talking to you like that for 15 minutes.","I'm not John Connor. Connor fought Skynet. I just figured out how to get cited."],s:"Right. That was a lot, wasn't it? Don't worry, I'm not going to talk to you like that for the next fifteen minutes. I'll let that one slip. I'm not John Connor. Connor fought Skynet. I just figured out how to get cited by it, which this year apparently counts as a superpower."},
 {n:6,a:"Backstory",t:"The seed",c:["Quick backstory, so you know who to blame.","I was ranting in LinkedIn comments: Google's algorithm has been broken since the 2022 helpful-content update.","One line: 'don't hate the players, hate the game.'"],s:"Quick backstory, so you know who to blame. I was ranting in the LinkedIn comments about how the Google algorithm has been fundamentally broken since the helpful content update in 2022, maybe a bit before. And I wrote one line: don't hate the players, hate the game."},
 {n:7,a:"Backstory",t:"The invite",c:["EGR saw it and asked ME to write a piece.","I said yes. I absolutely love to rant."],s:"Someone from EGR Global saw it and asked <b>me</b> if I wanted to write a piece. I said yes. I absolutely love to rant."},
