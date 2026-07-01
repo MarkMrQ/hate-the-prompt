@@ -1,11 +1,19 @@
 # DON'T HATE THE PLAYER, HATE THE PROMPT
-### iGB L!VE 2026 · ~16-17 min spoken + outro film · McMark · 47-slide cut
+### iGB L!VE 2026 · trimmed cut · McMark · 47 slides
 
-Matches the deck and the laptop-2 notes in presenter.html. One card per slide, 1:1. Two trims from the 20-min run: the slide-5 John Connor repeat (the film already says it) and the looping 'trust not ranking' restatement on slide 32.
+Tightened from the 20-min run. All jokes and facts kept; filler and repeats removed.
 
 ## Two-laptop setup
-- Laptop 1 -> index.html (deck). Laptop 2 -> presenter.html (notes). Same keys; notes counter = real slide number. Start BOTH at slide 1.
+- Laptop 1 -> index.html (deck). Laptop 2 -> presenter.html (notes). Same keys; counter = real slide number. Start BOTH at slide 1.
 - Cold open (1-4) = film, don't speak. Presenter keys: T timer, B blackout, F fullscreen.
+
+## Pace notes (where the other minutes are hiding)
+These weren't in the script, they crept in live. Dropping them claws back ~2 min with zero content lost:
+- **Verbal tics**: "okay", "right", "now", "you know", "honestly", "all that jazz", "shits and giggles". Each is a half-beat; you say them a lot.
+- **Posts wall (11-13)**: name the six fast. Skip the per-person asides ("Steven, LinkedIn posts used to be a thing...", "Julian with his agency", "Lenny with a newsletter").
+- **Suganthan (30)**: skip "I'm scared of mispronouncing the name". Just "someone read two days of ChatGPT's traffic".
+- **Slide 32**: say "trust not ranking" once. Don't loop it across 31-33.
+- Still-optional content cuts if you want more: the "don't be evil / do the right thing" aside (19) and the "smell the bullshit" re-hash (30).
 
 ---
 
@@ -15,7 +23,7 @@ Matches the deck and the laptop-2 notes in presenter.html. One card per slide, 1
 
 **[5 · Title card lands]** Right. That was a lot, wasn't it? Don't worry, I'm not going to talk to you like that for the next fifteen minutes. I'll let that one slip.
 
-**[6 · The seed]** Quick backstory, so you know who to blame. I was ranting in the LinkedIn comments about how the Google algorithm has been fundamentally broken since the helpful content update in 2022, maybe a bit before. And I wrote one line: don't hate the players, hate the game.
+**[6 · The seed]** Quick backstory, so you know who to blame. I was ranting in the LinkedIn comments about how the Google algorithm has been fundamentally broken since the helpful content update in 2022. And I wrote one line: don't hate the players, hate the game.
 
 **[7 · The invite]** Someone from EGR Global saw it and asked me if I wanted to write a piece. I said yes. I absolutely love to rant.
 
@@ -33,27 +41,27 @@ Matches the deck and the laptop-2 notes in presenter.html. One card per slide, 1
 
 **[14 · Mirror check (job titles)]** Take a look in the mirror. Then put your hand back up if the person who told you to rank in ChatGPT had some kind of fluffy job title. Head of. Director of. Founder OR Growth? [beat] I'm not sure what that last one does all day, but he's very confident. And he's got a course.
 
-**[15 · You don't rank. You surface.]** And I'll say this really early so we know what we're here for. Ranking in ChatGPT, that's not a real thing. You don't rank in ChatGPT, you surface in it. The difference between those two words, ranking and surfacing, is the difference between a six-figure consultancy invoice and an in-house team that actually knows what they're doing.
+**[15 · You don't rank. You surface.]** I'll say it early, so we know why we're here. Ranking in ChatGPT isn't a real thing. You don't rank, you surface. And the difference between those two words is the difference between a six-figure consultancy invoice and an in-house team that actually knows what they're doing.
 
 **[16 · I'm Mark]** Hello, I'm Mark. I run SEO and ASO at MrQ. And the next fifteen minutes are probably going to upset some people. I think that's a really good thing. So let's go, shall we?
 
-**[17 · GEO · AEO · LLMO]** Here's what happened. Generative AI hit the mainstream, ChatGPT became a verb, and marketeers, and I say this with affection because I am one, panicked. And whenever we panic, an entire consultancy economy materialises overnight to sell us the cure. The cure has many names. Generative engine optimisation. Answer engine optimisation. LLM optimisation. Danny Sullivan invented LMNOPEO as a joke about this exact trend. Notice they all end in the same two letters, E-O, engine optimisation, because the easiest way to sell something new is to make it sound like something you already buy. And iGaming is the perfect target: high CAC, low patience, CMOs who lose sleep over every point, and we're in the your-money-your-life category by Google's own standards. We'd buy anything labelled protect your SEO traffic from AI.
+**[17 · GEO · AEO · LLMO]** Here's what happened. Generative AI hit the mainstream, ChatGPT became a verb, and marketeers, and I say this with affection because I am one, panicked. And whenever we panic, an entire consultancy economy materialises overnight to sell us the cure. The cure has many names. Generative engine optimisation. Answer engine optimisation. LLM optimisation. Danny Sullivan invented LMNOPEO as a joke about this exact trend. Notice they all end in the same two letters, E-O, engine optimisation, because the easiest way to sell something new is to make it sound like something you already buy. And iGaming is the perfect target: high CAC, and we're in the your-money-your-life category by Google's own standards. We'd buy anything labelled protect your SEO traffic from AI.
 
 **[18 · 'AI SEO' isn't a new planet ★NEW]** So is any of this actually new? A sliver. Picture two circles, AI optimisation and SEO. They sell you AI SEO like it's a new planet you have to go and colonise. It isn't. It's mostly the same circle you already live on. There's a thin crescent that's genuinely new, and we'll get to it, but anyone telling you to abandon SEO and start again is selling a map to a planet that doesn't exist.
 
 **[19 · 'Good SEO is good GEO.' Mostly. ★NEW]** And to be fair, I try to be fair once per talk, Cyrus Shepard, who ran global SEO at Moz, says good SEO is good GEO. He's mostly right. But mostly is carrying weight, because it doesn't run in reverse. There are genuinely new things now: tracking whether you show up in the models, citation-gap analysis, making your site readable to agents, keeping your entities consistent. That's the crescent. It's real. It's just not a new planet. And take Google's advice with a grain of salt. They mostly want to sell us ads.
 
-**[20 · Why is the model sceptical?]** Now the problem is the cure is for an illness we don't actually have, and I can prove it with a screenshot. But quick interlude first. The question in your head should be: why would the model be sceptical of optimised search result pages in the first place? Because Google taught us this was a problem decades ago. It's the same reason you should never Google your symptoms.
+**[20 · Why is the model sceptical?]** But the cure is for an illness we don't actually have. So first: why would the model be sceptical of an optimised page in the first place? Because Google taught us this decades ago. Same reason you should never Google your symptoms.
 
 **[21 · Consensus: a double edge]** If you type is the earth flat into Google, you get a confident no, it's roughly a sphere, and thank you Mark Williams-Cook for letting me steal that analogy. That's consensus working as intended. Now Google what's wrong with me next to your symptoms, and you'll be told you've got cancer and you're going to die. Same mechanism, opposite outcome. The site with the best SEO doesn't have the most accurate answer, it just has the best backlinks. It might be a content farm wearing a stethoscope. And ChatGPT is just querying Google's index via retrieval. Same source pool, same problem.
 
-**[22 · We are the problem it was built to solve]** The model can't run a backlink audit, so how does it filter? By consensus. Six trusted sources saying the same thing about your brand outweigh one over-optimised page saying something different. Quick confession. When my girlfriend Googles something mid-argument to prove her point, I take the phone out of her hand and reverse-engineer the search to support my side, because the SERPs are downstream of how you ask the question. I've been doing this for ten years. She finds it annoying. It's completely fair. And I'm not the only SEO in this room who can do that. The internet is full of people like us, the model knows we exist, and that is why the system prompt is what it is. We are not the audience for the system prompt. We are the problem it was written to solve.
+**[22 · We are the problem it was built to solve]** The model can't run a backlink audit, so how does it filter? By consensus. Six trusted sources saying the same thing about your brand outweigh one over-optimised page saying something different. Quick confession. When my girlfriend Googles something mid-argument to prove her point, I take the phone out of her hand and reverse-engineer the search to support my side, because the SERPs are downstream of how you ask the question. I've been doing this for ten years. She finds it annoying. It's completely fair. And I'm not the only SEO in this room who does that. The model knows people like us exist. That's why the system prompt reads the way it does. We're not its audience. We're the problem it was written to solve.
 
 **[23 · 36% / 90% — Claude vs ChatGPT]** Honesty aside before the receipts: not every large language model behaves the same. New research from Profound's zero-click study shows Claude actually transposes Brave's top ten directly. Claude is the most ranking-like model on the market, but it's only about 36% of AI search volume. ChatGPT is a lot bigger. So when a consultant sells you ranking in ChatGPT, they're selling a behaviour that doesn't even exist in the engine that matters most.
 
 **[24 · The receipts]** Right. That's the theory done. This is the bit where I stop having opinions and start showing you screenshots. Receipts.
 
-**[25 · How it actually works]** When you ask ChatGPT a question, like what are the best online casinos in the UK, the model triggers a web search, pulls back a candidate pool, and runs it through a layer of instructions. That instruction layer is what I call the system prompt, and it tells the model what to trust, what to ignore, and what kind of source to flag as suspect. That third box, the hidden one, is the bit nobody selling you GEO has ever mentioned.
+**[25 · How it actually works]** When you ask ChatGPT a question, like what are the best online casinos in the UK, the model triggers a web search, pulls back a candidate pool, and runs it through a layer of instructions. That instruction layer is what I call the system prompt, and it tells the model what to trust and what to flag as suspect. That third box, the hidden one, is the bit nobody selling you GEO has ever mentioned.
 
 **[26 · The leaked system prompt]** A few weeks ago the system prompts for Claude Opus, GPT-5.5 and Gemini leaked. I covered them in EGR, which is why I'm here today. One specific instruction in Claude's prompt, and I'm not joking, is the line that should be tattooed on every iGaming SEO's chest: be appropriately sceptical of results for topics subject to a lot of search engine optimisation, like product recommendations, or results that might be highly ranked but inaccurate or misleading. Anthropic hard-coded that right into Claude. The most optimised SERPs are the least trustworthy.
 
@@ -111,4 +119,4 @@ Matches the deck and the laptop-2 notes in presenter.html. One card per slide, 1
 ## Act-break one-liners
 - 9: "I'd apologise in advance, but I genuinely won't mean it." · 24: "I stop having opinions and start showing you screenshots." · 31: "no acronym means no invoice." · 40: "Do the work. I'm aware that's an anticlimax. I'm living it."
 
-## Credits: Mark Williams-Cook (flat-earth 21, machine-true 38) · Charles Floate (machine-true 38) · Dima (OREO 39) · Connor (Terminator gag, slides 11-13).
+## Credits: Mark Williams-Cook (flat-earth 21, machine-true 38) · Charles Floate (machine-true 38) · Dima (OREO 39) · Connor (Terminator gag, 11-13).
